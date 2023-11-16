@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invoice Creation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="finalreport.css">
+
+  <script>
+function add(){
+var a,b,c,d,e,f;
+a=Number(document.getElementById("3").value);
+b=Number(document.getElementById("4").value);
+c=Number(document.getElementById("5").value);
+d=Number(document.getElementById("6").value);
+e=Number(document.getElementById("7").value);
+f= a+b+c+d+e;
+document.getElementById("answer").value= f;
+}
+</script>
+<style>
+  body {
+  background-image: url(back1.jpg);
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+</style>
+</head>
+<body>
+
+  <h1>Aapki Adalat</h1>
+  
+  <ul>
+    <a href="FAQ"><li>FAQ</li></a>
+    <a href="client.html"> <li>ABOUT</li> </a>
+    <a href="login.html"><li>LOGIN</li></a>
+    <a href="index.html"><li>HOME</li></a>
+  </ul>
+  <form action="invoice.php" method="post">
+    
+<div class="finalreport">
+  <form  action="REPOSITORY.html"  border-radius="5pxw">
+    <div class="container">
+      <h2>INVOICE</h2>
+      <hr>
+      <label for="client"><b>Client name</b></label>
+      <input id="1" type="text" placeholder="Enter Client name" name="clientname" required style="width:20%"><br>
+
+      <label for="client"><b>Advocate name</b></label>
+      <input id="2" type="text" placeholder="Enter advocate name" name="advocatename" required style="width:20%"><br>
+
+      <label for="client"><b>Contingency Fees</b></label>
+      <input id="3" type="number" placeholder="Enter amount in INR" name="fees" required style="width:20%"><br>
+
+      <label for="client"><b>Consultation Fees</b></label>
+      <input id="4" type="number" placeholder="Enter extra charges" name="charges" required style="width:20%"><br>
+
+      <label for="client"><b>Flat Fee</b></label>
+      <input id="5" type="number" placeholder="Enter extra charges" name="charges" required style="width:20%"><br>
+
+      <label for="client"><b>Referral Fees</b></label>
+      <input id="6" type="number" placeholder="Enter extra charges" name="charges" required style="width:20%"><br>
+
+      <label for="client"><b>Costs of Suits</b></label>
+      <input id="7" type="number" placeholder="Enter extra charges" name="charges" required style="width:20%"><br>
+
+
+  <!--<b>TAX:</b><select name="tax">
+    <option selected hidden value="---select---">---select %---</option>
+    <option value='6'>0%</option>
+    <option value='8'>5%</option>
+    <option value='14'>12%</option>
+    <option value='18'>18%</option>
+    <option value='18'>28%</option>
+  </select><br><br> -->
+  <button onclick="add()">TOTAL FEES</button>
+  <input id="answer"><br><br>
+  <button type="submit" class="registerbtn">SUBMIT</button><br>
+</form>
+</div>
+</body>
+</html>

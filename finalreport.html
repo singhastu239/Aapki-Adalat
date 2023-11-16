@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Case Filing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="finalreport.css">
+<style>
+  body {
+  background-image: url(back1.jpg);
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+</style>
+</head>
+<body>
+
+  <h1>Aapki Adalat</h1>
+
+  <ul>
+    <a href="FAQ"><li>FAQ</li></a>
+    <a href="client.html"> <li>ABOUT</li> </a>
+    <a href="login.html"><li>LOGIN</li></a>
+    <a href="index.html"><li>HOME</li></a>
+  </ul>
+
+<div class="finalreport">
+  <form  action="finalreport.php" method="post">
+    <div class="container">
+      <h2>Report</h2>
+      <hr>
+      <label for="Case Number"><b>Case Number</b></label>
+      <input type="text" placeholder="Enter Case Number" name="CaseNumber" required style="width:20%"><br><br>
+
+      <label for="Hearing Date"><b>Hearing Date</b></label>
+      <input type="date" placeholder="dd-mm-yyyy" name="HearingDate" required><br><br>
+
+  <b><p>Field of the case</p></b>
+  <select name="Field" required>
+    <option selected hidden value="---select---">---select---</option>
+    <option value="Animal law">Animal law</option>
+    <option value="Civil rights law">Civil rights law</option>
+    <option value="Corporate law">Corporate law</option>
+    <option value="Criminal law">Criminal law</option>
+    <option value="Education law">Education law</option>
+    <option value="Employment and labor law">Employment and labor law</option>
+    <option value="Environmental and natural resources law">Environmental and natural resources law</option>
+    <option value="Family and juvenile law">Family and juvenile law</option>
+    <option value="Immigration law">Immigration law</option>
+    <option value="Health law">Health law</option>
+    <option value="Intellectual property law">Intellectual property law</option>
+    <option value="International law">International law</option>
+    <option value="Municipal law">Municipal law</option>
+    <option value="Real estate law">Real estate law</option>
+    <option value="Securities law">Securities law</option>
+    <option value="Sports and Entertainment law">Sports and Entertainment law</option>
+    <option value="Tax law">Tax law</option>
+  </select><br><br>
+
+
+  <div class="Lawyers">
+    <div class="Defending">
+      <label for="Defending Lawyer"><b>Defending Lawyer</b></label>
+      <input type="text" placeholder="Defending Lawyer" name="DefendingLawyer" required>
+
+      <label for="Defending witnesses"><b>Defending client</b></label>
+      <textarea name="Defendingwitnesses" rows="10" cols="50" placeholder="Defending witnesses"></textarea>
+
+      </template>
+    </div>
+    </div>
+  <div class="Lawyers">
+      <div class="Opposing">
+           <label for="Opposing Lawyer"><b>Opposing Lawyer</b></label>
+           <input type="text" placeholder="Opposing Lawyer" name="OpposingLawyer" required>
+
+           <label for="Opposing witnesses"><b>Opposing client</b></label>
+           <textarea name="Opposingwitnesses" rows="10" cols="50" placeholder="Opposing witnesses"></textarea>
+      </div>
+
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+      <label for="Verdict"><b>Verdict</b></label>
+      <textarea name="verdict" rows="5" cols="100"></textarea>
+<br><br>
+      <label for="case progress"> <b>Case Progression</b></label>
+      <select class="" name="HEARING">
+          <option selected hidden value="---select---">---select---</option>
+          <option value="Animal law">Close case</option>
+          <option value="Civil rights law" onclick="displayDate()">Postpone case</option>
+          <option value="Corporate law"></option>
+
+      </select>
+      <br><br><br>
+                       <label for="Hearing Date"><b>Next Hearing Date</b></label>
+                      <input name="dates" id="date" type="date" value="2020-1-22"><br>
+
+            <button type="submit" class="registerbtn">SUBMIT</button><br>
+
+
+
+  </form>
+
+</div>
+
+</body>
+</html>

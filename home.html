@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Aapki Adalat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px;background-color: orange" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"class="w3-bar-item w3-button">CLOSE</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="REPOSITORY.html">REPOSITORY</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+  <div class="w3-center" style="background-color:rgb(115, 84, 40)">
+  <h1 class="w3-xxxlarge w3-animate-bottom">Aapki Adalat</h1>
+  <h4>For the need of common people</h4>
+  
+    <div class="w3-padding-32">
+      <a href="login.html"> <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"  style="font-weight:900;">LOGIN NOW</button></a>
+    </div>
+  </div>
+</header>
+
+
+<! -- Client -->
+<a href="client.html">
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>CLIENT</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>For common people</p>
+  </div>
+</div></a>
+
+<! -- Admin --><a href="REPOSITORY.html">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>ADMIN</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>For court Admins</p>
+  </div>
+</div></a>
+
+<!-- Advocate --><a href="advocate.html">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>ADVOCATE</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>For advocates</p>
+  </div>
+</div>
+</div></a>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Aapki Adalat</h3>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "20%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>

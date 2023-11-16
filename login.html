@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Aapki Adalat</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <h1>Aapki Adalat</h1>
+    <ul>
+      <a href="FAQ"><li>FAQ</li></a>
+      <a href="about.html"> <li>ABOUT</li> </a>
+      <a href="login.html"><li>LOGIN</li></a>
+      <a href="index.html"><li>HOME</li></a>
+    </ul>
+    <!-- Begin Page Content -->
+    <div id="container">
+      <div class="splitlog">
+        <form action="loginclient.php" method="post">
+          <h3>CLIENT LOGIN</h3>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username1" name="username1" /><br /><br />
+          <br />
+          <label for="password">Password:</label>
+          <input type="password" id="password1" name="password1" /><br />
+          <br />
+          <a href="client-advo.html">
+            <button type="button" name="button">LOGIN</button></a
+          >
+        </form>
+      </div>
+      <div class="splitlog">
+        <form action="loginlawyer.php" method="post">
+          <h3>LAWYER LOGIN</h3>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" /><br /><br />
+          <br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br />
+          <br />
+          <a href="display_table.php">
+            <button type="button" name="lawyer">LOGIN</button></a
+          >
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

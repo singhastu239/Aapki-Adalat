@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <title>Aapki Adalat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-theme-black.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+  />
+  <background: url="back1.jpeg">
+  <link rel="html" href="template.html" />
+  <link rel="stylesheet" href="CaseDetails.css" type="text/css" />
+  <body>
+    <h1>Aapki Adalat</h1>
+
+    <ul>
+      <a href="FAQ"><li>FAQ</li></a>
+      <a href="about.html"> <li>ABOUT</li> </a>
+      <a href="login.html"><li>LOGIN</li></a>
+      <a href="index.html"><li>HOME</li></a>
+    </ul>
+
+    <form>
+      <div class="one" style="color: white">
+        <b>Enter Case Number:</b>
+        <input
+          type="text"
+          height="300"
+          width="800"
+          id="case_no"
+          name="case_no"
+          size="50px"
+          height="10px"
+          placeholder="Enter case number"
+          required
+        />
+      </div>
+
+      <div class="two" style="color: white">
+        <b>Defending Lawyers: </b>
+        <input
+          type="text"
+          name="dlawname"
+          value=""
+          placeholder="Defending lawyer"
+          required
+        />
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <b>Opposing Lawyers: </b
+        ><input
+          type="text"
+          name=""
+          placeholder="Opposing lawyer"
+          value=""
+          required
+        />
+      </div>
+
+      <div class="three" style="color: white">
+        <b>Summary:</b> &emsp;
+        <textarea
+          placeholder="Summary of the day"
+          cols="30"
+          rows="5"
+          name="summary"
+          id="summary"
+          required
+        ></textarea>
+      </div>
+
+      <div class="two" style="color: white">
+        Defense:
+        <input
+          type="text"
+          name="dwitness"
+          id="dwitness"
+          placeholder="Witness and Proof"
+          required
+        />
+
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        Opposition:
+        <input
+          type="text"
+          name="owitness"
+          id="owitness"
+          placeholder="Witness and Proof"
+          required
+        />
+      </div>
+
+      <div class="five" style="color: white">
+        <b>Status:</b>
+        <select name="hearing" id="hearing">
+          <option onclick="select_date()">Status of the case</option>
+          <option value="Postpone">Postpone</option>
+          <option value="Final">Final Judgement</option>
+          <option value="Dismissed">Dismissed</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>

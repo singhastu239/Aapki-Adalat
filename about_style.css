@@ -1,0 +1,68 @@
+html
+{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(back1.jpg);
+}
+*{
+ margin: 0px;
+ padding: 2px;
+}
+
+h1
+{
+  text-align:center;
+  color:white;
+}
+h2
+{
+  font-size: 125px;
+  text-align: center;
+  color:white;
+}
+
+ul
+{
+  border-radius:20px;
+  overflow: hidden;
+  margin-top:20px;
+  background-color:orange;
+}
+
+li
+{
+  text-align: center;
+  font-size:25px;
+  font-family: monospace;
+  font-weight: bold;
+  float: right;
+  margin: auto;
+  display: block;
+  color: white;
+  padding: 25px;
+}
+
+
+
+.block p{
+  font-size: 20px;
+  margin-left: 110px;
+  padding-left: 190px;
+  text-align: center;
+  text-indent: inherit;
+  color: white;
+  width: 70%;
+  float: center;
+}
+
+
+.foot{
+  height: 75px;
+  margin-bottom: 0px;
+  background-color: orange;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}

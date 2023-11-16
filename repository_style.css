@@ -1,0 +1,85 @@
+body{
+  background-image: url(back1.jpg);
+  background-size: cover;
+}
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+h1
+{
+  text-align:center;
+  color:white;
+}
+
+ul
+{
+  border-radius:20px;
+  overflow: hidden;
+  margin-top:20px;
+  background-color:orange;
+}
+
+li
+{
+  text-align: center;
+  font-size:25px;
+  font-family: monospace;
+  font-weight: bold;
+  float: right;
+  margin: auto;
+  display: block;
+  color: white;
+  padding: 25px;
+}
+
+.main
+{
+  margin : 1;
+}
+
+.card
+{
+  float:left;
+  width: 20%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  display: inline-block;
+  box-shadow: 5px 5px 5px 2px grey;
+  border-radius: 10px;
+  margin: 20px 10px 0px 125px;
+  padding: 0px 5px 0px 5px;
+}
+.card button{
+  border-radius: 10px;
+  color:white;
+  background-color: orange;
+  border: 2px solid grey;
+}
+
+.card:hover
+{
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+}
+
+.card button:hover{
+
+  background-color: white;
+  color: black;
+}
+
+.image img{
+      width: 100%;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+}
+
+footer
+{
+  text-align: center;
+
+}
